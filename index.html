@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Home - Deixe seu lar ainda mais aconchegante</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter e Playfair Display) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
@@ -34,6 +37,8 @@
     </script>
 </head>
 <body class="bg-white text-slate-700 font-sans antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-2 text-2xl font-serif font-bold text-brand-900">
@@ -53,12 +58,14 @@
                     <i data-lucide="shopping-bag" class="w-6 h-6"></i>
                     <span class="absolute top-1 right-1 w-2 h-2 bg-brand-400 rounded-full"></span>
                 </button>
-                <a href="#colecao" class="hidden sm:inline-flex bg-brand-400 hover:bg-brand-500 text-white font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all text-sm">
+                <a href="#destaques" class="hidden sm:inline-flex bg-brand-400 hover:bg-brand-500 text-white font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all text-sm">
                     Ver Coleção
                 </a>
             </div>
         </div>
     </header>
+
+    <!-- Hero Section -->
     <section class="relative bg-gradient-to-b from-brand-50 via-brand-50/50 to-white py-20 lg:py-28 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6 text-center lg:text-left">
@@ -89,6 +96,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Benefícios -->
     <section class="py-12 bg-white border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-50/60">
@@ -129,7 +138,9 @@
             </div>
         </div>
     </section>
-    <section id="destaques" class="py-20 bg-white">
+
+    <!-- Produtos em Destaque (Adicionado scroll-mt-24 para ajustar a compensação do cabeçalho fixo) -->
+    <section id="destaques" class="py-20 bg-white scroll-mt-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Queridinhos da Semana</h2>
@@ -137,6 +148,7 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card Produto 1 -->
                 <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
                         <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=600&q=80" alt="Vaso Cerâmica Azul" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -151,6 +163,8 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- Card Produto 2 -->
                 <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
                         <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80" alt="Vela Aromática" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -164,9 +178,11 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- Card Produto 3 -->
                 <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
-                        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=600&q=80" alt="Luminária de Mesa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80" alt="Luminária de Mesa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <h3 class="font-semibold text-slate-800 text-lg group-hover:text-brand-500 transition-colors">Luminária Nordic Light</h3>
                     <p class="text-sm text-slate-500 mb-3">Iluminação LED suave</p>
@@ -177,9 +193,11 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- Card Produto 4 (Imagem atualizada para um conjunto de xícaras real) -->
                 <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd2?auto=format&fit=crop&w=600&q=80" alt="Jogo de Xícaras" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Jogo de Xícaras" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <h3 class="font-semibold text-slate-800 text-lg group-hover:text-brand-500 transition-colors">Kit Xícaras Horizon</h3>
                     <p class="text-sm text-slate-500 mb-3">Conjunto com 4 peças</p>
@@ -193,6 +211,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Banner Promocional / Newsletter -->
     <section class="py-20 bg-gradient-to-r from-brand-100 to-brand-50">
         <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
             <span class="text-brand-900 font-semibold text-sm uppercase tracking-wider">Oferta Exclusiva</span>
@@ -255,6 +275,8 @@
             <p>&copy; 2026 Lumina Home. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Script para renderizar os ícones da biblioteca Lucide -->
     <script>
         lucide.createIcons();
     </script>
