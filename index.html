@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Home - Deixe seu lar ainda mais aconchegante</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-700 font-sans antialiased selection:bg-brand-200 selection:text-brand-900">
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 text-2xl font-serif font-bold text-brand-900">
+                <i data-lucide="home" class="w-7 h-7 text-brand-400"></i>
+                Lumina<span class="text-brand-400">Home</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#destaques" class="hover:text-brand-500 transition-colors">Destaques</a>
+                <a href="#categorias" class="hover:text-brand-500 transition-colors">Categorias</a>
+                <a href="#sobre" class="hover:text-brand-500 transition-colors">Sobre Nós</a>
+                <a href="#depoimentos" class="hover:text-brand-500 transition-colors">Avaliações</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button class="p-2 text-slate-600 hover:text-brand-500 relative">
+                    <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-brand-400 rounded-full"></span>
+                </button>
+                <a href="#colecao" class="hidden sm:inline-flex bg-brand-400 hover:bg-brand-500 text-white font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all text-sm">
+                    Ver Coleção
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="relative bg-gradient-to-b from-brand-50 via-brand-50/50 to-white py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left">
+                <span class="inline-block bg-brand-100 text-brand-900 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">
+                    Nova Coleção de Primavera
+                </span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                    Transforme seu lar em um refúgio de paz.
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                    Descubra itens de decoração, utensílios e organização selecionados para trazer leveza, elegância e funcionalidade ao seu dia a dia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#destaques" class="bg-brand-400 hover:bg-brand-500 text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-brand-200 transition-all text-center">
+                        Explorar Produtos
+                    </a>
+                    <a href="#sobre" class="border border-brand-200 bg-white hover:bg-brand-50 text-slate-700 font-semibold px-8 py-4 rounded-full transition-all text-center">
+                        Conhecer a Loja
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute -inset-4 bg-brand-200/50 rounded-3xl blur-2xl -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" 
+                     alt="Decoração de sala moderna em tons claros" 
+                     class="rounded-2xl shadow-2xl object-cover w-full h-[480px]">
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-50/60">
+                <div class="p-3 bg-white text-brand-500 rounded-lg shadow-sm">
+                    <i data-lucide="truck" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900 text-sm">Frete Grátis</h4>
+                    <p class="text-xs text-slate-500">Em compras acima de R$ 199</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-50/60">
+                <div class="p-3 bg-white text-brand-500 rounded-lg shadow-sm">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900 text-sm">Garantia Premium</h4>
+                    <p class="text-xs text-slate-500">Produtos de altíssima qualidade</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-50/60">
+                <div class="p-3 bg-white text-brand-500 rounded-lg shadow-sm">
+                    <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900 text-sm">Troca Fácil</h4>
+                    <p class="text-xs text-slate-500">Até 30 dias para devolução</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-50/60">
+                <div class="p-3 bg-white text-brand-500 rounded-lg shadow-sm">
+                    <i data-lucide="headset" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900 text-sm">Suporte 24/7</h4>
+                    <p class="text-xs text-slate-500">Atendimento humanizado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="destaques" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Queridinhos da Semana</h2>
+                <p class="text-slate-600 mt-3">Os itens mais desejados para renovar a energia do seu ambiente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=600&q=80" alt="Vaso Cerâmica Azul" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-brand-900 text-xs font-semibold px-2.5 py-1 rounded-full">Destaque</span>
+                    </div>
+                    <h3 class="font-semibold text-slate-800 text-lg group-hover:text-brand-500 transition-colors">Vaso Minimalista Soft</h3>
+                    <p class="text-sm text-slate-500 mb-3">Cerâmica artesanal</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-slate-900">R$ 129,90</span>
+                        <button class="p-2.5 bg-brand-50 text-brand-500 hover:bg-brand-400 hover:text-white rounded-full transition-colors">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80" alt="Vela Aromática" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-semibold text-slate-800 text-lg group-hover:text-brand-500 transition-colors">Vela Perfumada Clean</h3>
+                    <p class="text-sm text-slate-500 mb-3">Cera vegetal de algodão</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-slate-900">R$ 69,90</span>
+                        <button class="p-2.5 bg-brand-50 text-brand-500 hover:bg-brand-400 hover:text-white rounded-full transition-colors">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=600&q=80" alt="Luminária de Mesa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-semibold text-slate-800 text-lg group-hover:text-brand-500 transition-colors">Luminária Nordic Light</h3>
+                    <p class="text-sm text-slate-500 mb-3">Iluminação LED suave</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-slate-900">R$ 219,90</span>
+                        <button class="p-2.5 bg-brand-50 text-brand-500 hover:bg-brand-400 hover:text-white rounded-full transition-colors">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="group border border-slate-100 rounded-2xl p-4 hover:shadow-xl hover:border-brand-200 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl bg-slate-100 mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Jogo de Xícaras" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-semibold text-slate-800 text-lg group-hover:text-brand-500 transition-colors">Kit Xícaras Horizon</h3>
+                    <p class="text-sm text-slate-500 mb-3">Conjunto com 4 peças</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-slate-900">R$ 149,90</span>
+                        <button class="p-2.5 bg-brand-50 text-brand-500 hover:bg-brand-400 hover:text-white rounded-full transition-colors">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-gradient-to-r from-brand-100 to-brand-50">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+            <span class="text-brand-900 font-semibold text-sm uppercase tracking-wider">Oferta Exclusiva</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-slate-900">Ganhe 10% OFF na sua primeira compra</h2>
+            <p class="text-slate-600 max-w-xl mx-auto">Cadastre-se na nossa newsletter para receber novidades, dicas de decoração e cupons de desconto no seu e-mail.</p>
+            
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-4" onsubmit="event.preventDefault(); alert('Obrigado por se inscrever!');">
+                <input type="email" placeholder="Digite seu melhor e-mail" required class="flex-1 px-5 py-3.5 rounded-full border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400">
+                <button type="submit" class="bg-brand-400 hover:bg-brand-500 text-white font-semibold px-7 py-3.5 rounded-full shadow-md transition-all">
+                    Quero Desconto
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="space-y-4">
+                <a href="#" class="flex items-center gap-2 text-2xl font-serif font-bold text-white">
+                    <i data-lucide="home" class="w-6 h-6 text-brand-300"></i>
+                    LuminaHome
+                </a>
+                <p class="text-sm">Tornando espaços comuns em ambientes extraordinários com beleza e simplicidade.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Navegação</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Início</a></li>
+                    <li><a href="#destaques" class="hover:text-white transition-colors">Produtos</a></li>
+                    <li><a href="#sobre" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Ajuda</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Entregas e Frete</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Trocas e Devoluções</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Termos de Uso</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Siga-nos</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-brand-400 hover:text-white transition-colors">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-brand-400 hover:text-white transition-colors">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 text-center text-xs">
+            <p>&copy; 2026 Lumina Home. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
